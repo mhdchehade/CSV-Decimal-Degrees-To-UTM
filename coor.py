@@ -29,7 +29,7 @@ def convert_file(input_file, output_csv_file, output_txt_file, blockname):
             for lat, lon in coordinates:
                 easting, northing, zone, hemisphere = decimal_degrees_to_utm(lat, lon)
                 writer.writerow([lat, lon, easting, northing, zone, hemisphere])
-                txtfile.write(f"-INSERT({blockname},{easting},{northing})\n")
+                txtfile.write(f'(command "-insert" "{blockname}" "{easting},{northing},0" 1 1 0)\n')
 
 # Example usage
 input_file = 'input.csv'
