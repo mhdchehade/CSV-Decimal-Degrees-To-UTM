@@ -42,7 +42,7 @@ The script will prompt you to enter the block name. This block name will be used
 After running the script, you will get two output files:
 
     output.csv: This file contains the original coordinates along with the converted UTM coordinates, zone, and hemisphere.
-    output.txt: This file contains the insert commands with the provided block name and the converted UTM coordinates.
+    output.txt: This file contains the insert commands for autoCAD with the provided block name and the converted UTM coordinates.
 
 ## Example
 
